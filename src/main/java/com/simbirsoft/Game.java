@@ -13,12 +13,12 @@ public class Game {
         this.isInterestingGame = isInterestingGame;
     }
 
-    public void setPrice(int count) {
-        if (price > 70 && isInterestingGame) {
+    public void setBadRating() {
             System.out.println("Не тратьте на это свое время и деньги");
-        } else {
-            System.out.println("Отличный ААА-проект!");
-        }
+    }
+
+    public void setGoodRating() {
+            System.out.println("Отличный ААА-проект");
     }
 
     public boolean isInterestingGame() {

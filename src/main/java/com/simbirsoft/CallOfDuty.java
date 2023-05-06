@@ -6,19 +6,11 @@ public class CallOfDuty extends Game {
         super(name, price, isInterestingGame);
     }
 
-    private int numberOfSkins = 0;
-
-    public int getNumberOfSkins() {
-        return numberOfSkins;
-    }
-
-    public void setNumberOfSkins(int numberOfSkins) {
-        this.numberOfSkins = numberOfSkins;
-    }
-
-    public void buyNewSkinOnWeapon() {
+    public void buyNewSkinOnWeapon(int numberOfSkins) {
         if (numberOfSkins < 10) {
             System.out.println("Будь самым крутым, приобрети новую раскраску на оружие!");
+        } else {
+            System.out.println("Оформи предзаказ на новое дополнение!");
         }
     }
 }

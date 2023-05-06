@@ -6,19 +6,11 @@ public class GenshinImpact extends Game {
         super(name, price, isInterestingGame);
     }
 
-    private int prayers = 0;
-
-    public int getPrayers() {
-        return prayers;
-    }
-
-    public void setPrayers(int prayers) {
-        this.prayers = prayers;
-    }
-
-    public void buyMorePrayers() {
+    public void buyMorePrayers(int prayers) {
         if (prayers < 100) {
             System.out.println("Неужели тебе не хочется нового героя в твоей коллекции?");
+        } else {
+            System.out.println("Купи молитвы на будущих героев!");
         }
     }
 }
