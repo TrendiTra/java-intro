@@ -1,4 +1,4 @@
-package com.simbirsoft;
+package com.gmail.trenditra7;
 
 public class CallOfDuty extends Game {
 
